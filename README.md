@@ -14,5 +14,6 @@ block.
 This implementation was written quickly for an assignment, so some legibility was sacrificed for speed. Having said that, it's relatively clean code for a quick implementation.
 
 Packages required:
-    - pandas, for data importing and manipulation
-    - numpy, for calculation
+
+    pandas, for data importing and manipulation
+    numpy, for calculation
