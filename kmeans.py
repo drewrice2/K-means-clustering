@@ -18,6 +18,12 @@ class Kmeans(object):
             self.points_in_centroid.append([])
 
     def create_centroid(self):
+        '''
+        called from init
+
+        returns:
+            initialized centroid
+        '''
         choice = np.random.choice(len(self.data))
         return self.data[choice]
 
@@ -47,6 +53,9 @@ class Kmeans(object):
             self.assign_point(index_of_centroid,idx_datapoint)
 
     def assign_point(self,index_of_centroid, index_of_point):
+        '''
+        called from assign_points_to_centroid
+        '''
         self.points_in_centroid[index_of_centroid].append(index_of_point)
 
     def _iteration(self):
