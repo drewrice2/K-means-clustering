@@ -15,5 +15,4 @@ This implementation was written quickly for an assignment, so some legibility wa
 
 Packages required:
 
-    pandas, for data importing and manipulation
     numpy, for calculation
