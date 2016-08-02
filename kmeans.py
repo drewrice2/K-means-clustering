@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 
 class Kmeans(object):
     def __init__(self,dataset,k=3):
