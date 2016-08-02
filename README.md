@@ -13,6 +13,4 @@ block.
 
 This implementation was written quickly for an assignment, so some legibility was sacrificed for speed. Having said that, it's relatively clean code for a quick implementation.
 
-Packages required:
-
-    numpy, for calculation
+**Note:** numpy is requried.
