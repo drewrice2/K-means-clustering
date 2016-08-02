@@ -2,8 +2,6 @@ import numpy as np
 import pandas as pd
 
 class Kmeans(object):
-    # initialize the K means
-    # create k centroids
     def __init__(self,dataset,k=3):
         '''
         set up the clusters and the dataset
