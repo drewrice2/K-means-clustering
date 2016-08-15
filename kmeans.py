@@ -78,7 +78,9 @@ class Kmeans(object):
         print self.centroids
 
 if __name__ == '__main__':
+    # test kmeans using iris dataset, 3 clusters
     from sklearn.datasets import load_iris
     data = load_iris()
     km = Kmeans(data['data'],3)
+    # ten iterations, due to quick convergence
     km.run_iterations(10)
