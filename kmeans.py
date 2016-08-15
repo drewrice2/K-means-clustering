@@ -1,7 +1,7 @@
 import numpy as np
 
 class Kmeans(object):
-    def __init__(self,dataset,k=3):
+    def __init__(self,dataset,k):
         '''
         set up the clusters and the dataset
 
@@ -58,6 +58,13 @@ class Kmeans(object):
         '''
         self.points_in_centroid[index_of_centroid].append(index_of_point)
 
+    def run_iterations(self,num=100):
+        '''
+        for num iterations, run _iteration method
+        '''
+        for iteration in range(num):
+            self._iteration()
+
     def _iteration(self):
         '''
         move the centroid to the mean of the clustered points
@@ -69,13 +76,6 @@ class Kmeans(object):
         for centroid_location in range(len(self.centroids)):
             self.centroids[centroid_location] = np.mean(self.data[self.points_in_centroid[centroid_location]],axis=0)
         print self.centroids
-
-    def run_iterations(self,num=100):
-        '''
-        for num iterations, run _iteration method
-        '''
-        for iteration in range(num):
-            self._iteration()
 
 if __name__ == '__main__':
     from sklearn.datasets import load_iris

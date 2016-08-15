@@ -1,6 +1,6 @@
 # K-means clustering algorithm
 
-A basic implementation of a K-means clustering algorithm. Can be used to customer segmentation, etc.
+A basic implementation of an unsupervised K-means clustering algorithm. Can be used for customer segmentation, clustering different types of data, etc.
 
 Used the classic iris dataset to cluster data points into 3 groups.
 
